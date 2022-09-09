@@ -47,4 +47,3 @@ objectclass: top
 objectclass: groupOfNames
 cn: ADMIN
 member: uid=admin,ou=people,dc=springframework,dc=org
-
