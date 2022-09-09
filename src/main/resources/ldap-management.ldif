@@ -1,0 +1,52 @@
+dn: dc=springframework,dc=org
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: springframework
+
+
+dn: ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn:ou=roles,dc=springframework,dc=org
+objectclass: top
+objectclass: organizationalUnit
+ou: roles
+
+dn:uid=admin,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Admin Person
+sn: Admin
+uid: admin
+userPassword: $2a$12$bsqAfFNfhgRD9oCChWDLOe3pBqg6JUr0/g0He9v1swmmmLbJ/xLFe
+
+dn:uid=user,ou=people,dc=springframework,dc=org
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: User Person
+sn: User
+uid: user
+userPassword: $2a$12$MAL1s6K.zZgXpxqkINs/JOP2Ax/JKYmD.Eoj2mSnJ482BM7dGmG2m
+
+dn:cn=USER,ou=roles,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: USER
+member: uid=admin,ou=people,dc=springframework,dc=org
+member: uid=muhoadm,ou=people,dc=springframework,dc=org
+member: uid=user,ou=people,dc=springframework,dc=org
+
+dn:cn=ADMIN,ou=roles,dc=springframework,dc=org
+objectclass: top
+objectclass: groupOfNames
+cn: ADMIN
+member: uid=admin,ou=people,dc=springframework,dc=org
+member: uid=muhoadm,ou=people,dc=springframework,dc=org
+
