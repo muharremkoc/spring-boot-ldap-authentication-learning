@@ -40,7 +40,6 @@ objectclass: top
 objectclass: groupOfNames
 cn: USER
 member: uid=admin,ou=people,dc=springframework,dc=org
-member: uid=muhoadm,ou=people,dc=springframework,dc=org
 member: uid=user,ou=people,dc=springframework,dc=org
 
 dn:cn=ADMIN,ou=roles,dc=springframework,dc=org
@@ -48,5 +47,4 @@ objectclass: top
 objectclass: groupOfNames
 cn: ADMIN
 member: uid=admin,ou=people,dc=springframework,dc=org
-member: uid=muhoadm,ou=people,dc=springframework,dc=org
 
